@@ -16,6 +16,10 @@ for (let i = 0; i < 2; i++) {
   const johmBMI = johnWeightArray[i] / johnHeightArray[i] ** 2;
 
   const markHigherBMI = markBMI > johmBMI;
-
+  if (markHigherBMI) {
+    console.log(`marks bmi is higher ${markBMI}`);
+  } else {
+    console.log(`john bmi is higher ${johmBMI}`);
+  }
   console.log(markHigherBMI, "markHigherBMI");
 }
